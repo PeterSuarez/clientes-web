@@ -18,7 +18,7 @@ export interface NuevoCliente {
 @Injectable({ providedIn: 'root' })
 export class ClienteApi {
   private readonly http = inject(HttpClient);
-  private readonly url = 'http://localhost:3000/api/clientes';
+  private readonly url = 'https://clientes-web-2-h1dk.onrender.com/api/clientes';
 
   listar() {
     return this.http.get<Cliente[]>(this.url);
