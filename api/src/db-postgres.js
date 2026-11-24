@@ -9,7 +9,6 @@ const listo = pool.query(`CREATE TABLE IF NOT EXISTS clientes (
  nombre TEXT NOT NULL,
  correo TEXT NOT NULL UNIQUE,
  telefono TEXT
-APE-4 · Unidad 4 · Página 4 de 12
 )`);
 listo.catch((error) => console.error('No se pudo preparar PostgreSQL:', error.message));
 const listar = async () => {
